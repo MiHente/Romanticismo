@@ -1,0 +1,87 @@
+/**********************************************/
+/* Web de Romanticismo                        */
+/* Hoja de estilo para index                  */
+/* Autor: Angel Gabriel Nuñez Abreu           */
+/* versión: 1.0                               */
+/* 11 Noviembre de 2022                       */
+/**********************************************/
+
+/* ESTILO GENERAL */
+
+@font-face {
+    font-family: titulo;
+    src: url('../Fonts/Caver\ Pitalsal.ttf')
+}
+
+@font-face {
+    font-family: textos;
+    src: url('../Fonts/BadScript-Regular.ttf')
+}
+
+* {box-sizing: border-box;}
+body{
+    margin: 0%; padding: 0%; /*resetear el por defecto de la ventana*/
+    font-family: textos;
+    background-color: #e654ab;
+    margin:auto;
+}
+#wrapper {width: 80%;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+
+}
+/*********** HERO SECTION  OPTION 1: IMAGEN **********/
+#hero {
+    background-image: url('../images/fondo-hero.jpg');
+    height: 100vh;/*para obligar a que se vea maás allá del contenido*/
+    background-repeat: no-repeat; /*para que no la repita*/
+    background-size: cover; /*cubre todo el fondo*/
+    background-position: center; /*Fija lo que hay en el medio*/
+    font-family: titulos;
+    font-size: 3rem;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+
+/*HERO 3:COLOR LISO + GETWAVES */
+#hero3 {
+    background-color: #e7008a;/*mismo color que la ola*/
+    height: 40vh;
+    position: relative;
+
+}
+#titulo3 {
+    font-family: titulos;
+    font-size: 4rem;
+    color:white;
+
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#titulo {
+    background-color: rgba(255, 255, 255, .5);
+    width:30%;
+}
+
+#titulo2 {
+    font-family: titulos;
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 50%;
+    text-align: center; /*podía haber sido padding*/
+
+    /*estascuatro reglas colocan una caja en medio de otra*/
+    position: absolute; /*se fija una caja en medio de otra*/
+    top:50%;
+
+}
+/********** MEDIA QUERIES**********/
+@media only screen and (width <= 900px){
+    #wrapper {width: 90%;}
+}
+@media only screen and (width <= 600px){
+    #wrapper {width: 100%;}
+}

@@ -1,0 +1,29 @@
+
+/**********************************************/
+/* Web de Romanticismo                        */
+/* Hoja de la canción del pirata              */
+/* Autor: Angel Gabriel Nuñez Abreu           */
+/* versión: 1.0                               */
+/* 2 Noviembre de 2022                        */
+/**********************************************/
+
+/* ESTILO GENERAL                             */
+
+@font-face {
+    font-family: corrido;
+    src: url('../Fonts/BadScript-Regular.ttf')
+}
+
+body {font-family: corrido;
+    color: black;
+    font-size: 1.2em;
+    background-image: url('../images/fondo-guapo.jpg');
+    background-repeat: repeat-y;
+    background-color: rgba(218, 165, 32, 0.991);
+    background-size: 20%;
+
+}
+
+#poema {background-color: rgba(218, 165, 32, 0.991);
+    width: 25%;
+    margin-left:25%;}

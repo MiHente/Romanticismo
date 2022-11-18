@@ -1,0 +1,76 @@
+/**********************************************/
+/* Web de Romanticismo                        */
+/* Hoja de estilo para autores                */
+/* Autor: Angel Gabriel Nuñez Abreu           */
+/* versión: 1.0                               */
+/* 21 Octubre de 2022                         */
+/**********************************************/
+
+/* ESTILO GENERAL                             */
+
+@font-face {
+    font-family: titulos;
+    src: url('../Fonts/Arimo-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family:textos ;
+    src: url('../Fonts/Caver\ Pitalsal.ttf');
+}
+*{box-sizing: border-box;} /*en width debe contar desde el borde hacia adentro*/
+body {
+    margin: 0;padding:0;
+    font-family: textos;
+    text-indent: 3em;
+    /* padding: 4%; no necesito paddign con un loyout single colum*/ 
+    background-color: rgb(181, 129, 141);
+}
+#wrapper {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2% 2% 10% 2% ;
+} 
+
+
+h1,h2,h3 {
+    font-family: titulos;
+    border-bottom: 2px solid red;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    text-indent: 0;
+}   
+#espronceda {
+        width:25%;
+        float: left; /* para que la imagen tenga el texto alrededor */
+        padding: 10px;
+}
+
+#limpiar {clear: both;}/*desativar la imagen que tenga*/
+p {
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+/* psuedoclase como selector ;hover (ratón encima)*/
+a:hover{color: darkgoldenrod;}
+
+/********** MEDIA QUERIES**********/
+
+/********** Para Tablet**********/
+@media only screen and (width<=850px){
+    #espronceda {width: 50%;}
+}
+/********** Para Movil**********/
+
+
+@media only screen and (width<=500px){
+    #espronceda {width: 100%;}
+    #wrapper {width: 100%;}
+}
